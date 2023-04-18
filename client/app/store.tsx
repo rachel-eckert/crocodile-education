@@ -1,8 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
-
+import familiesSlice from "../features/families/familiesSlice";
+import singleFamilySlice from "../features/families/singleFamilySlice";
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    families: familiesSlice,
+    family: singleFamilySlice,
+  },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 

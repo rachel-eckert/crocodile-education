@@ -1,23 +1,24 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
-
+import { useAppDispatch } from "./hooks";
 import Home from "../features/home/Home";
-
+import AllFamilies from "../features/families/AllFamilies";
+import SingleFamily from "../features/families/SingleFamily";
 /**
  * COMPONENT
  */
 
 const AppRoutes = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {}, []);
 
   return (
     <div>
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route path="/*" element={<AllFamilies />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/family/:id" element={<SingleFamily />} />
       </Routes>
     </div>
   );
