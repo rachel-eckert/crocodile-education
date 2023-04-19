@@ -3,20 +3,20 @@ import axios from "axios";
 import { Family } from "../../interfaces";
 export const fetchSingleFamily = createAsyncThunk(
   "families/fetchOne",
-  async (familyId: string) => {
+  async (id: string) => {
     try {
-      console.log(familyId);
-      const { data } = await axios.get(`/api/family/${familyId}`);
+      const { data } = await axios.get(`/api/family/${id}`);
+      console.log("look at id" + id + data);
       return data;
     } catch (err) {
       console.log(err);
     }
   }
 );
-
+let initialState: Family | Family[] = [];
 export const singleFamilySlice = createSlice({
   name: "family",
-  initialState: {},
+  initialState: initialState,
   extraReducers: (builder) => {
     builder.addCase(fetchSingleFamily.fulfilled, (state, action) => {
       return action.payload;
