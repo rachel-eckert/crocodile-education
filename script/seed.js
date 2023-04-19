@@ -88,7 +88,7 @@ async function seed() {
     name: "Cuvier's Dwarf Caiman",
     scientificName: "Paleosuchus palpebrosus",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Hul_-_Paleosuchus_palpebrosus_-_2.jpg",
+      "https://capronparkzoo.com/wp-content/uploads/2019/02/caiman-1-900x500.jpg",
     description:
       "It is the smallest species of Crocodilian. An adult typically only weighs 10-15 pounds. It is suggested that different populations of this species are genetically different, which may make them a cryptic species complex.",
     location: "Northeastern South America",
@@ -98,7 +98,7 @@ async function seed() {
     name: "Smooth-fronted Caiman",
     scientificName: "Paleosuchus trigonatus",
     imageUrl:
-      "https://animaldiversity.org/collections/contributors/john_white/john_white_reptiles/trig03_05-04/medium.jpg",
+      "https://www.nature-myview.com/uploads/2/8/3/6/28363143/8404942_orig.jpg",
     description:
       "It is similar in looks to the spectacled caiman, but lacks the bony ridge between the eyes. It eats terrestrial animals, such as porcupines and lizards, rather than fish like other caiman species.",
     location: "Amazon and Orinoco Basins in South America",
