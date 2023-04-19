@@ -13,7 +13,7 @@ export const fetchSingleFamily = createAsyncThunk(
     }
   }
 );
-let initialState: Family | Family[] = [];
+let initialState: any = {};
 export const singleFamilySlice = createSlice({
   name: "family",
   initialState: initialState,

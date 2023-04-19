@@ -6,6 +6,10 @@ const Species = db.define("species", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  scientificName: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   description: {
     type: Sequelize.TEXT,
     allowNull: false,

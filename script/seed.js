@@ -25,19 +25,97 @@ async function seed() {
     name: "Gavialidae",
     about: "They have a long narrow snout, with an enlarged boss at the tip.",
   });
-  const americanAlligator = await Species.create({
+  const american = await Species.create({
     name: "American Alligator",
+    scientificName: "Alligator mississippiensis",
     imageUrl:
       "https://npr.brightspotcdn.com/legacy/sites/wgcu/files/201504/american_alligators.jpg",
     description:
-      "It is the largest reptile in North America. They can sometimes be found in brackish water (not as salty as true salt water, but not freshwater).",
-    location: "Southeastern part of the United States",
+      "It is the largest reptile in North America. They can sometimes be found in brackish water. It is the second largest species in the family Alligatoridae. They are apex predators.",
+    location: "Southeastern United States",
+    familyId: alligator.id,
+  });
+  const chinese = await Species.create({
+    name: "Chinese Alligator",
+    scientificName: "Alligator sinensis",
+    imageUrl:
+      "https://www.peoriazoo.org/wp-content/uploads/2014/04/99chinesealligator.jpg",
+    description:
+      "It is among the smallest species of crocodilians. They brumate in burrows in the winter. It is a critically endangered species, partially because of habitate destruction. The population was about 300 as of 2017.",
+    location: "A small set of regions in eastern China",
+    familyId: alligator.id,
+  });
+  const spectacled = await Species.create({
+    name: "Spectacled Caiman",
+    scientificName: "Caiman crocodilus",
+    imageUrl:
+      "https://www.activewild.com/wp-content/uploads/2018/05/spectacled-caiman.jpg",
+    description:
+      "It has 4 subspecies. It is considered small to medium sized. The name 'spectacled' comes from a bony ridge between its eyes, making it look like it is wearing spectacles.",
+    location: "Northern South America",
+    familyId: alligator.id,
+  });
+  const broad = await Species.create({
+    name: "Broad-snouted Caiman",
+    scientificName: "Caiman latirostris",
+    imageUrl:
+      "https://animalcorner.org/wp-content/uploads/2015/02/broad-snouted-caiman-1.jpg",
+    description:
+      "As the name suggests, they have a broad snout, which is used to rip through vegetation of marshes to reach its food source. It is usually found in marshes, swamps, and mangroves.",
+    location: "Eastern and central South America",
+    familyId: alligator.id,
+  });
+  const yacare = await Species.create({
+    name: "Yacare Caiman",
+    scientificName: "Caiman yacare",
+    imageUrl: "https://pbs.twimg.com/media/FcudYiNWAAIFcUE.jpg:large",
+    description:
+      "It was thought to be a subspecies of the Spectacled Caiman, but are now considered separate due to geographical differences. It was heavily hunted in the 1980s, but trading regulations ensured its survival.",
+    location: "Argentina, Bolivia, Brazil, and Paraguay",
+    familyId: alligator.id,
+  });
+  const black = await Species.create({
+    name: "Black Caiman",
+    scientificName: "Melanosuchus niger",
+    imageUrl:
+      "https://cdn.britannica.com/72/127372-050-32EDFCAB/Black-caiman.jpg",
+    description:
+      "It is the largest species in the family Alligatoridae. It has dark coloration as an adult, as the name implies. It is an apex predator and potentially a keystone species.",
+    location: "Brazil, Peru, Bolivia, and Colombia",
+    familyId: alligator.id,
+  });
+  const cuvier = await Species.create({
+    name: "Cuvier's Dwarf Caiman",
+    scientificName: "Paleosuchus palpebrosus",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Hul_-_Paleosuchus_palpebrosus_-_2.jpg",
+    description:
+      "It is the smallest species of Crocodilian. An adult typically only weighs 10-15 pounds. It is suggested that different populations of this species are genetically different, which may make them a cryptic species complex.",
+    location: "Northeastern South America",
+    familyId: alligator.id,
+  });
+  const smooth = await Species.create({
+    name: "Smooth-fronted Caiman",
+    scientificName: "Paleosuchus trigonatus",
+    imageUrl:
+      "https://animaldiversity.org/collections/contributors/john_white/john_white_reptiles/trig03_05-04/medium.jpg",
+    description:
+      "It is similar in looks to the spectacled caiman, but lacks the bony ridge between the eyes. It eats terrestrial animals, such as porcupines and lizards, rather than fish like other caiman species.",
+    location: "Amazon and Orinoco Basins in South America",
     familyId: alligator.id,
   });
 
   console.log(`seeded successfully`);
 }
 
+// const name = await Species.create({
+//   name: "",
+//   scientificName: "",
+//   imageUrl: "",
+//   description: "",
+//   location: "",
+//   familyId: alligator.id,
+// });
 /*
  We've separated the `seed` function from the `runSeed` function.
  This way we can isolate the error handling and exit trapping.
