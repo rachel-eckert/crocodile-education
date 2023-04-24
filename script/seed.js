@@ -104,10 +104,151 @@ async function seed() {
     location: "Amazon and Orinoco Basins in South America",
     familyId: alligator.id,
   });
-
+  const ghar = await Species.create({
+    name: "Gharial",
+    scientificName: "Gavialis gangeticus",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Indian_Gharial_Crocodile_Digon3.JPG/800px-Indian_Gharial_Crocodile_Digon3.JPG",
+    description:
+      "It is among the longest of all crocodilians. It is critically endangered because of habitat loss and depletion of fish resources. It is locally instinct in Pakistan, Bhutan, and Myanmar. Its long, narrow snout makes it well adapted to catching fish.",
+    location: "India, Nepal, and Bangladesh",
+    familyId: gharial.id,
+  });
+  const falseGhar = await Species.create({
+    name: "False Gharial",
+    scientificName: "Tomistoma schlegelii",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tomistoma_schlegelii_fg01.JPG",
+    description:
+      "Its snout broadens towards the base and is more similar to true crocodiles rather than gharials. Despite this, according to their DNA, they are a part of the family Gavialidae. It has the largest skull of any living crocodilian.",
+    location: "Malaysia, Borneo, Sumatra, and Java",
+    familyId: gharial.id,
+  });
+  const slender = await Species.create({
+    name: "Central African Slender-Snouted Crocodile",
+    scientificName: "Mecistops leptorhynchus",
+    imageUrl: "",
+    description:
+      "It was once lumped into the same species as the West African slender-snouted crocodile, but two studies led to it being separated. There is little conservation data, though it was considered critically endangered when part of the other species. It feeds mostly on fish.",
+    location: "Central Africa and South Sudan",
+    familyId: croc.id,
+  });
+  const americanCroc = await Species.create({
+    name: "American Crocodile",
+    scientificName: "Crocodylus acutus",
+    imageUrl: "",
+    description:
+      "It is one of the largest crocodile species. It is the only species other than the saltwater crocodile to be found living and thriving in saltwater. They can be found in places without freshwater sources, but can also be found in freshwater.",
+    location: "Southern Florida, the Carribbean, and northern South America",
+    familyId: croc.id,
+  });
+  const australian = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const cuban = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const dwarf = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const morelet = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const mugger = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const halls = await Species.create({
+    name: "Hall's New Guinea Crocodile",
+    scientificName: "Crocodylus halli",
+    imageUrl: "",
+    description: "",
+    location: "Southern half of New Guinea",
+    familyId: croc.id,
+  });
+  const newguinea = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "Southern half of New Guinea",
+    familyId: croc.id,
+  });
+  const nile = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const west = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const orinoco = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const philippine = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const saltwater = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const siamese = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
   console.log(`seeded successfully`);
 }
-
+//gharial
 // const name = await Species.create({
 //   name: "",
 //   scientificName: "",
