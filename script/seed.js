@@ -142,7 +142,79 @@ async function seed() {
     location: "Southern Florida, the Carribbean, and northern South America",
     familyId: croc.id,
   });
-  const australian = await Species.create({
+  const halls = await Species.create({
+    name: "Hall's New Guinea Crocodile",
+    scientificName: "Crocodylus halli",
+    imageUrl: "",
+    description:
+      "It was originally thought to be a population of the New Guinea crocodile, but it was ultimately found to be a distinct species. Crocodiles at a zoo in Florida were thought to be of the species novaeguinae, but were actually found to be halli during research on the two species.",
+    location: "Southern half of New Guinea",
+    familyId: croc.id,
+  });
+  const orinoco = await Species.create({
+    name: "Orinoco Crocodile",
+    scientificName: "Crocodylus intermedius",
+    imageUrl: "",
+    description:
+      "It has a long snout that is narrower than the similar looking American crocodile. It is the largest predator in the Americas. It is an apex predator, and has even been found to eat caimans. It is closely related to the Nile crocodile despite the large difference in range.",
+    location: "Orinoco river basin in Colombia and Venezuela",
+    familyId: croc.id,
+  });
+  const fresh = await Species.create({
+    name: "Freshwater Crocodile",
+    scientificName: "Crocodylus johnstoni",
+    imageUrl: "",
+    description:
+      "It is much less aggressive than its saltwater counterpart. Though it is tolerant to saltwater, it cannot compete with saltwater crocodiles. With this, freshwater crocodiles are often found in locations saltwater crocodiles cannot, or will not, go, like arid and rocky areas.",
+    location: "Northern Australia",
+    familyId: croc.id,
+  });
+  const philippine = await Species.create({
+    name: "Philippine Crocodile",
+    scientificName: "Crocodylus mindorensis",
+    imageUrl: "",
+    description:
+      "It was considered a subspecies of the New Guinea crocodile until 1989. It is a small, freshwater crocodile. It eats ailing fish more often than healthy fish. It is critically endangered partly due to unsafe fishing methods. The most notable fishing method is blast fishing.",
+    location: "The Philippines",
+    familyId: croc.id,
+  });
+  const morelet = await Species.create({
+    name: "Morelet's Crocodile",
+    scientificName: "Crocodylus moreletii",
+    imageUrl: "",
+    description:
+      "It is smaller than other species of crocodiles, but are very fast runners. Despite the smaller size, it is very strong and very aggressive. There are documented attacks on humans. These attacks are thought to have been predatory rather than defensive in nature.",
+    location: "Eastern Mexico",
+    familyId: croc.id,
+  });
+  const nile = await Species.create({
+    name: "Nile Crocodile",
+    scientificName: "Crocodylus niloticus",
+    imageUrl: "",
+    description:
+      "It is the second largest crocodile and is usually found in freshwater habitats. It is a social species and have been known to share basking spots and large prey. It is one of the most dangerous species of crocodiles and is responsible for hundreds of human deaths yearly.",
+    location: "Sub-saharan Africa",
+    familyId: croc.id,
+  });
+  const newguinea = await Species.create({
+    name: "New Guinea Crocodile",
+    scientificName: "Crocodylus novaeguineae",
+    imageUrl: "",
+    description:
+      "It is tolerant to saltwater, but usually found in freshwater. If it is in salt or brackish water, it never competes with the saltwater crocodile. It is agile and can lunge upwards into the air to catch bats and flying birds.",
+    location: "Northern half of New Guinea",
+    familyId: croc.id,
+  });
+  const mugger = await Species.create({
+    name: "Mugger Crocodile",
+    scientificName: "Crocodylus palustris",
+    imageUrl: "",
+    description:
+      "It has the broadest snout of all living crocodiles. When faced with extreme temperatures, it digs burrows to retreat into. It has been documented using lures to hunt birds. It is among the the first reptile species recorded using tools.",
+    location: "Iran, Pakistan, Nepal, India, and Sri Lanka",
+    familyId: croc.id,
+  });
+  const saltwater = await Species.create({
     name: "",
     scientificName: "",
     imageUrl: "",
@@ -158,87 +230,39 @@ async function seed() {
     location: "",
     familyId: croc.id,
   });
-  const dwarf = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const morelet = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const mugger = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const halls = await Species.create({
-    name: "Hall's New Guinea Crocodile",
-    scientificName: "Crocodylus halli",
-    imageUrl: "",
-    description: "",
-    location: "Southern half of New Guinea",
-    familyId: croc.id,
-  });
-  const newguinea = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "Southern half of New Guinea",
-    familyId: croc.id,
-  });
-  const nile = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const west = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const orinoco = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const philippine = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
-  const saltwater = await Species.create({
-    name: "",
-    scientificName: "",
-    imageUrl: "",
-    description: "",
-    location: "",
-    familyId: croc.id,
-  });
   const siamese = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const westafrican = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const westslender = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const osborn = await Species.create({
+    name: "",
+    scientificName: "",
+    imageUrl: "",
+    description: "",
+    location: "",
+    familyId: croc.id,
+  });
+  const dwarf = await Species.create({
     name: "",
     scientificName: "",
     imageUrl: "",

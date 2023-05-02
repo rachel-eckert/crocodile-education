@@ -1,0 +1,5 @@
+{
+ "editor.enablePreview": false,
+    "redhat.telemetry.enabled": false,
+    "csharp.suppressDotnetRestoreNotification": true
+}
