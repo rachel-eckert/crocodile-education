@@ -8,7 +8,7 @@ export interface Species {
 }
 export interface Family {
   imageUrl: any;
-  id: string | undefined;
+  id: string;
   name: string | undefined;
   about: string | undefined;
   description: any;
