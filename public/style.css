@@ -29,3 +29,29 @@ img {
   object-fit: cover;
   object-position: bottom;
 }
+
+/* html {
+  background-color: #84a98c;
+} */
+
+.dark {
+  background-color: #344e41;
+  color: #e1e4dd;
+}
+.light {
+  background-color: #e1e4dd;
+  color: #344e41;
+}
+
+.dButton {
+  color: #e1e4dd;
+}
+.dButton:visited {
+  color: #e1e4dd;
+}
+.lButton {
+  color: #344e41;
+}
+.lButton:visited {
+  color: #344e41;
+}

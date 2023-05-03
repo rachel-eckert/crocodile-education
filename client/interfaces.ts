@@ -16,3 +16,7 @@ export interface Family {
   species: any;
   scientificName: any;
 }
+
+export interface Theme {
+  theme: string | undefined;
+}

@@ -5,17 +5,22 @@ import { useAppDispatch } from "./hooks";
 import Home from "../features/home/Home";
 import AllFamilies from "../features/families/AllFamilies";
 import SingleFamily from "../features/families/SingleFamily";
+import { Theme } from "../interfaces";
 /**
  * COMPONENT
  */
 
-const AppRoutes = () => {
+const AppRoutes = (props: Theme) => {
+  console.log(props.theme);
   return (
     <div>
       <Routes>
         <Route path="/" element={<AllFamilies />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/family/:id" element={<SingleFamily />} />
+        <Route
+          path="/family/:id"
+          element={<SingleFamily theme={props.theme} />}
+        />
       </Routes>
     </div>
   );
