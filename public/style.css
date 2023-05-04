@@ -55,3 +55,11 @@ img {
 .lButton:visited {
   color: #344e41;
 }
+
+.lFamilyLink {
+  color: #e1e4dd;
+}
+
+.dFamilyLink {
+  color: #344e41;
+}

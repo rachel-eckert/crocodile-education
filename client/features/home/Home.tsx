@@ -3,12 +3,12 @@ import AllFamilies from "../families/AllFamilies";
 /**
  * COMPONENT
  */
-const Home = () => {
-  return (
-    <div>
-      <AllFamilies />
-    </div>
-  );
-};
+// const Home = () => {
+//   return (
+//     <div>
+//       <AllFamilies theme/>
+//     </div>
+//   );
+// };
 
-export default Home;
+// export default Home;

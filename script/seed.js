@@ -31,7 +31,7 @@ async function seed() {
     imageUrl:
       "https://npr.brightspotcdn.com/legacy/sites/wgcu/files/201504/american_alligators.jpg",
     description:
-      "It is the largest reptile in North America. They can sometimes be found in brackish water. It is the second largest species in the family Alligatoridae. They are apex predators.",
+      "It is the largest reptile in North America. They can sometimes be found in brackish water. It is the second largest species in the family Alligatoridae. They are apex predators in their environment.",
     location: "Southeastern United States",
     familyId: alligator.id,
   });
@@ -140,7 +140,7 @@ async function seed() {
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg",
     description:
-      "It is one of the largest crocodile species. It is the only species other than the saltwater crocodile to be found living and thriving in saltwater. They can be found in places without freshwater sources, but can also be found in freshwater.",
+      "It is one of the largest crocodile species. It is the only species other than the saltwater crocodile to be found living and thriving in saltwater. They can be found in places without freshwater sources, but are more often found in freshwater.",
     location: "Southern Florida, the Carribbean, and northern South America",
     familyId: croc.id,
   });
@@ -231,7 +231,7 @@ async function seed() {
       "https://cdn.britannica.com/55/234355-050-6B07C130/Saltwater-crocodile.jpg",
     description:
       "It is the largest living reptile. It is a large hypercarnivorous apex predator. It is known to prey on any animal that enters their territory, including humans. It has the strongest bite of any living animal. It was hunted for its meat, eggs, and skin, but is now a protected species in many countries.",
-    location: "Northern Australia coastline and southern Asia coastline",
+    location: "Northern coastline of Australia and southern coastline of Asia ",
     familyId: croc.id,
   });
   const cuban = await Species.create({

@@ -42,7 +42,7 @@ const SingleFamily = (props: Theme) => {
     <Box>
       <div className="family">
         <Button>
-          <Typography className={button} component={Link} to="/home">
+          <Typography className={button} component={Link} to="/">
             Back to home
           </Typography>
         </Button>
