@@ -3,7 +3,7 @@ import { fetchFamiliesAsync } from "./familiesSlice";
 import { useEffect } from "react";
 import { Family } from "../../interfaces";
 import { Paper, Grid, Card } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { muiTheme } from "../../app/MuiTheme";
 import { ThemeProvider } from "@mui/material";
@@ -15,6 +15,14 @@ const AllFamilies = (props: Theme) => {
   useEffect(() => {
     dispatch(fetchFamiliesAsync());
   }, [dispatch]);
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  let width = windowSize.current[0];
+  let imgClass: string;
+  if (width > 600) {
+    imgClass = "largeImg";
+  } else {
+    imgClass = "smallImg";
+  }
 
   let linkstyle: string;
   if (props.theme == "light") linkstyle = "dFamilyLink";
@@ -28,6 +36,10 @@ const AllFamilies = (props: Theme) => {
           Crocodilia is an order of predatory, semiaquatic reptiles. Many
           crocodilians are quite large.
         </h3>
+        <img
+          className={imgClass}
+          src="https://upload.wikimedia.org/wikipedia/commons/5/58/Crocodilia_montage.jpg"
+        />
         <br />
         <p>
           They first appeared 95 million years ago. They are also the closest

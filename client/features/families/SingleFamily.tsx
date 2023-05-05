@@ -19,12 +19,9 @@ import { Theme } from "../../interfaces";
 const SingleFamily = (props: Theme) => {
   const { id } = useParams();
   const fam = useAppSelector((state) => state.family);
-  const [ids, setIds] = useState(id);
+
   const dispatch = useAppDispatch();
-  let next = +id! + 1;
-  let prev = +id! - 1;
-  if (next > 3) next = 1;
-  if (prev < 1) prev = 3;
+
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   console.log(windowSize.current[0]);
   let imgClass: string;
@@ -43,11 +40,7 @@ const SingleFamily = (props: Theme) => {
     dispatch(fetchSingleFamily(id!));
   }, [dispatch]);
   let species = fam.species;
-  // function handleClick() {
-  //   useEffect(() => {
-  //     dispatch(fetchSingleFamily(id!));
-  //   }, [dispatch]);
-  // }
+
   let button;
   let color: string;
   let bg: string;

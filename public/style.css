@@ -63,3 +63,13 @@ form div {
 .dFamilyLink {
   color: #344e41;
 }
+
+.smallImg {
+  width: 80vw;
+  height: auto;
+}
+
+.largeImg {
+  width: 800px;
+  height: auto;
+}

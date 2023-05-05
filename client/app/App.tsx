@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import Navbar from "../features/navbar/Navbar";
 import AppRoutes from "./AppRoutes";
 import { Theme } from "../interfaces";
@@ -21,6 +21,9 @@ const App = () => {
       label = "Switch to dark mode";
     }
   };
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   useEffect(() => {
     document.body.className = theme;
@@ -40,6 +43,7 @@ const App = () => {
             label={checked ? "Dark mode" : "Light mode"}
           />
         </FormGroup>
+        <Button onClick={handleOpen}>Open modal</Button>
 
         <AppRoutes theme={theme} />
       </ThemeProvider>
