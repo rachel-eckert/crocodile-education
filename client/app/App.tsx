@@ -25,23 +25,13 @@ const App = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   console.log(windowSize.current[0]);
   let width;
+  let backColor;
+  let btn;
   if (windowSize.current[0] < 600) {
     width = "85vw";
   } else {
     width = 500;
   }
-
-  const style = {
-    position: "absolute" as "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: width,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
-    boxShadow: 24,
-    p: 4,
-  };
   const [theme, setTheme] = useState("light");
   const [checked, setChecked] = useState(true);
   let label;
@@ -55,6 +45,25 @@ const App = () => {
       label = "Switch to dark mode";
     }
   };
+  if (theme == "light") {
+    backColor = "#e1e4dd";
+    btn = "#344e41";
+  } else {
+    backColor = "#344e41";
+    btn = "#e1e4dd";
+  }
+  let style = {
+    position: "absolute" as "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: width,
+    bgcolor: backColor,
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+  };
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -79,7 +88,9 @@ const App = () => {
             />
           </FormGroup>
 
-          <Button onClick={handleOpen}>View Key Words</Button>
+          <Button sx={{ color: btn }} onClick={handleOpen}>
+            View Key Words
+          </Button>
         </Box>
 
         <Modal
