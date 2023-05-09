@@ -21,6 +21,11 @@ export interface Theme {
   theme: string | undefined;
 }
 
+export interface ModalInt {
+  open: boolean;
+  setOpen: any;
+  handleClose: any;
+}
 declare module "@mui/material/styles" {
   interface Theme {
     status: {
