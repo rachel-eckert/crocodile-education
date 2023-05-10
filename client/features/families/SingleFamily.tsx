@@ -9,10 +9,8 @@ import {
   Card,
   CardContent,
   CardMedia,
-  CardActions,
   Box,
   Typography,
-  Paper,
   Grid,
 } from "@mui/material";
 import { Theme } from "../../interfaces";

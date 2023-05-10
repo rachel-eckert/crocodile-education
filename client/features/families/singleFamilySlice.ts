@@ -6,7 +6,6 @@ export const fetchSingleFamily = createAsyncThunk(
   async (id: string) => {
     try {
       const { data } = await axios.get(`/api/family/${id}`);
-      console.log("look at id" + id + data);
       return data;
     } catch (err) {
       console.log(err);

@@ -1,25 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Box, Button, Modal, Typography } from "@mui/material";
-import Navbar from "../features/navbar/Navbar";
+import { Box, Button, Modal } from "@mui/material";
 import AppRoutes from "./AppRoutes";
-import { Theme } from "../interfaces";
 import { Switch } from "@mui/material";
 import { ThemeProvider } from "@mui/material";
 import { muiTheme } from "./MuiTheme";
 import Vocab from "./Vocab";
 import { FormGroup, FormControlLabel } from "@mui/material";
-
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 500,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
 
 const App = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
@@ -100,7 +86,7 @@ const App = () => {
           aria-describedby="modal-modal-description">
           <Box sx={style}>
             <Vocab />
-            <Button sx={{ float: "right" }} onClick={handleClose}>
+            <Button sx={{ float: "right", color: btn }} onClick={handleClose}>
               close
             </Button>
           </Box>
@@ -110,9 +96,5 @@ const App = () => {
     </div>
   );
 };
-// brackish water
-// apex predator
-// keystone species
-// brumation
-// critically endangered
+
 export default App;

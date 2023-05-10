@@ -1,13 +1,11 @@
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { fetchFamiliesAsync } from "./familiesSlice";
-import { useEffect } from "react";
-import { Family } from "../../interfaces";
-import { Paper, Grid, Card } from "@mui/material";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { muiTheme } from "../../app/MuiTheme";
 import { ThemeProvider } from "@mui/material";
-import { Theme } from "../../interfaces";
+import { Theme, Family } from "../../interfaces";
+
 const AllFamilies = (props: Theme) => {
   const allFam: Family[] = useAppSelector((state) => state.families);
   const dispatch = useAppDispatch();
